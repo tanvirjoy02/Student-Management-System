@@ -1,19 +1,15 @@
 #include <iostream>
 #include <vector>
 #include <string>
-
 using namespace std;
-
 struct Student {
     int id;
     string name;
     double cgpa;
 };
-
 int main() {
     vector<Student> students;
     int choice;
-
     while (true) {
         cout << "\n--- Student Management System ---\n";
         cout << "1. Add Student\n";
@@ -21,7 +17,6 @@ int main() {
         cout << "3. Exit\n";
         cout << "Enter choice: ";
         cin >> choice;
-
         if (choice == 1) {
             Student s;
             cout << "Enter ID: ";
